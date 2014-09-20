@@ -9,11 +9,14 @@ html {
 }
 
 body {
+    position: relative;
     font-family: $font-sans;
     font-size: 14px;
     line-height: 1.5em;
     opacity: 0;
-    transition: opacity .5s;
+    transition: opacity 1s .2s;
+    background: lighten($color-black, 95%);
+
     @include selection {
         color: white;
         background: black;

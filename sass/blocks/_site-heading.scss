@@ -1,9 +1,11 @@
 .site-heading {
-	background: lighten($color-black, 95%);
+	position: relative;
+	z-index: 10;
 	text-align: center;
 	font-size: 1em;
 	font-weight: 500;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding: 30px 0;
+	background: $color-white;
 }

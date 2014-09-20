@@ -2,7 +2,7 @@
 	max-width: 1000px;
 	width: 80%;
 	margin: 0 auto;
-	padding: 130px 0 160px 0;
+	padding: 150px 0 160px 0;
 
 	@include small {
 		width: 80%;
@@ -17,7 +17,7 @@
 	&__title {
 		font-family: $font-sans;
 		font-size: 4em;
-		font-weight: 100;
+		font-weight: 300;
 		margin-bottom: 25px;
 
 		@include small {
@@ -56,20 +56,19 @@
 	}
 
 	&__link {
-		border: 2px solid $color-twitter;
 		display: inline-block;
 		padding: 15px 30px;
-		color: $color-twitter;
+		color: $color-white;
 		font-size: 1.2em;
 		text-transform: uppercase;
 		letter-spacing: 2px;
-		margin-top: 50px;
+		margin-top: 30px;
 		border-radius: 100px;
 		transition: all .2s linear;
 		text-align: center;
+		background: $color-twitter;
 
 		@include small {
-			border-radius: 0;
 			display: block;
 			margin-top: 40px;
 		}
@@ -79,7 +78,7 @@
 		}
 
 		&:hover {
-			background: $color-twitter;
+			background: darken($color-twitter, 15%);
 			color: $color-white;
 		}
 	}
